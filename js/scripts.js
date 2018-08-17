@@ -67,18 +67,20 @@ function editor(input) {
 $(document).ready(function() {
 $("#inputs").submit(function(event){
 
-// console.log($("#hal").val());
-// console.log("input is a " + typeof ($("#hal").val()));
-console.log(editor($("#hal").val()));
+function reset() {
+marker1 = [];
+marker2 = [];
+marker3 = [];
+$("#daisyBell").empty()
+}
+reset()
 function output(list) {
 list.forEach(function(gird){
     $("#daisyBell").append("<li>" + gird + "</li>")
   })
 }
 output(editor($("#hal").val()));
-var marker1 = []
-var marker2 = []
-var marker3 = []
+
 event.preventDefault()
 });
 });
