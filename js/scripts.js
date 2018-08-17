@@ -59,21 +59,26 @@ function editor(input) {
     output.splice(marker2[i], 1, "BOOP!")
   }
   for (var i = 0; i <= marker3.length; i++){
-    output.splice(marker3[i], 1, "I'm sorry dave, I'm afraid I can't do that")
+    output.splice(marker3[i], 1, "I'm sorry, Dave. I'm afraid I can't do that")
   }
   return output
 }
 
 $(document).ready(function() {
-$("#inputs").submit(function(){
-var otto = ranger($("#hal").val());
-// console.log("otto is "+ otto + " and otto contains " + typeof otto[0]);
-console.log($("#hal").val());
-console.log("input is a " + typeof ($("#hal").val()));
+$("#inputs").submit(function(event){
+
+// console.log($("#hal").val());
+// console.log("input is a " + typeof ($("#hal").val()));
 console.log(editor($("#hal").val()));
-// console.log(range);
-// console.log(marker1);
-// console.log(marker2);
-// console.log(marker3);
+function output(list) {
+list.forEach(function(gird){
+    $("#daisyBell").append("<li>" + gird + "</li>")
+  })
+}
+output(editor($("#hal").val()));
+var marker1 = []
+var marker2 = []
+var marker3 = []
+event.preventDefault()
 });
 });
