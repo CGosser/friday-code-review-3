@@ -5,7 +5,7 @@ function ranger(input) {
     range.unshift(String(i));
     i--
   }
-  console.log(range);
+  console.log(range + " is the range");
   return range
 }
 
@@ -33,9 +33,12 @@ var marker2 = []
 var marker3 = []
 function cataloger(targetArray) {
   var array1 = targetArray.slice(0);
+  console.log(array1 + "this is array1");
   var search = "";
-  for (var i = 0; i <= targetArray.length+1; i++){
-  search = array1.shift;
+  for (var i = 0; i <= targetArray.length -1; i++){
+    console.log("cataloger loop has run " + i + " times");
+  search = array1.shift();
+  console.log(search + " is the value of search and it has the type " + typeof search);
     if (charSearcher(search, "0")){
     marker1.push(i);
   } else if (charSearcher(search, "1")) {
@@ -59,5 +62,6 @@ cataloger(otto);
 // console.log(range);
 console.log(marker1);
 console.log(marker2);
+console.log(marker3);
 });
 });
