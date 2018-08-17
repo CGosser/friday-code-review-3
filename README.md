@@ -20,12 +20,12 @@ _this program will display a list of all numbers leading up to the number inputt
   * _expected output: 3 2 1_
 
 
-* _Will replace the numbers containing the digit 1 with "BEEP!"_
+* _Will replace the numbers containing the digit 0 with "BEEP!"_
   * _expected input: 31_
     * _expected output: BEEP!_
 
 
-* _Will replace numbers containing the digit 3 with "BOOP!", unless the previous specification is met_
+* _Will replace numbers containing the digit 1 with "BOOP!", unless the previous specification is met_
   * _expected input: 32_
   * _expected output: BOOP!_
 
