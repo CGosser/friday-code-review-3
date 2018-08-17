@@ -1,12 +1,39 @@
-# _{Application Name}_
+# Beep Boop
 
-#### _{Brief description of application}, {Date of current version}_
+#### Program to take number inputs and provide varied outputs for the numbers leading up to the input, 8-17-2018
 
-#### By _**{List of contributors}**_
+#### By _**Chris Gosser**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_this program will display a list of all numbers leading up to the number inputted by the user, with all numbers divisable by the number 3 replaced by "i'm sorry dave, i'm afraid i can't do that" unless the number contains the numeral 3, in which case the number will be replaced by "BOOP!" except in circumstances where the number contains the numeral 1, in which case it will word will be replaced by "BEEP!"_
+
+## specifications
+
+* _will accept numeric inputs_
+  * _expected input: 1_
+  * _expected output: 1_
+
+
+* _will display the numbers from 0 to the number inputted inputs_
+  * _expected input: 3_
+  * _expected output: 3 2 1_
+
+
+* _Will replace the numbers containing the digit 1 with "BEEP!"_
+  * _expected input: 31_
+    * _expected output: BEEP!_
+
+
+* _Will replace numbers containing the digit 3 with "BOOP!", unless the previous specification is met_
+  * _expected input: 32_
+  * _expected output: BOOP!_
+
+
+* _Will replace numbers which are divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that" unless the previous two statements are met_
+* _expected input: 33_
+* _expected output: I'm sorry, Dave. I'm afraid I can't do that_
+
 
 ## Setup/Installation Requirements
 

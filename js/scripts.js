@@ -44,7 +44,7 @@ function cataloger(targetArray) {
   } else if (charSearcher(search, "1")) {
     marker2.push(i);
   }
-    else if (parseInt(search) % 3 == 0) {
+    else if (parseInt(search) % 3 == 0 && search != "0") {
     marker3.push(i);
     }
   }
@@ -52,14 +52,14 @@ function cataloger(targetArray) {
 function editor(input) {
   var output = ranger(input)
   cataloger(output)
-  for (var i = 0; i <= marker1.length; i++){
-    output.splice(marker1[i], 1, "BEEP!")
+  for (var i = 0; i <= marker3.length; i++){
+    output.splice(marker3[i], 1, "I'm sorry, Dave. I'm afraid I can't do that")
   }
   for (var i = 0; i <= marker2.length; i++){
     output.splice(marker2[i], 1, "BOOP!")
   }
-  for (var i = 0; i <= marker3.length; i++){
-    output.splice(marker3[i], 1, "I'm sorry, Dave. I'm afraid I can't do that")
+  for (var i = 0; i <= marker1.length; i++){
+    output.splice(marker1[i], 1, "BEEP!")
   }
   return output
 }
